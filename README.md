@@ -1,4 +1,5 @@
 ## keys
+```
 ╔══════════════════╦══════════════════╗
 ║     player 1     ║     player 2     ║
 ╠══════════════════╬══════════════════╣
@@ -7,5 +8,6 @@
 ║  key A: -z       ║ arrow Left:  +z  ║
 ║  key D: +z       ║ arrow Right: -z  ║
 ╚══════════════════╩══════════════════╝
+```
 
 ![Animated GIF](https://github.com/sleepychloe/3d_pong/blob/main/pong.gif)
