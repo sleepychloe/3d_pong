@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>three.js</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<title>3D Pong</title>
 </head>
+
 <body>
-	<canvas id="threejs-canvas"></canvas>
+	<div class="header">
+		<canvas id="threejsCanvas" width="200" height="200"></canvas>
+		<div class="gameTitle">3D Pong</div>
+	</div>
+
+	<div id="startButton">
+		<button id="3dMode" onClick="start3dMode()">Start</button>
+	</div>
+
+	<div class="game">
+		<canvas id="pong3dCanvas" width="800" height="400" style="background-color: black;"></canvas>
+		<div id="lowerCanvases" style="display: flex; justify-content: center; gap: 20px;">
+			<canvas id="pong3dLeft" width="390" height="390" style="background-color: black;"></canvas>
+			<canvas id="pong3dRight" width="390" height="390" style="background-color: black;"></canvas>
+		</div>
+	</div>
+
 	<script type="importmap">
-                {
-                    "imports": {
-                        "three": "https://unpkg.com/three@0.108.0/build/three.module.js",
-                        "GLTFLoader": "https://unpkg.com/three@0.108.0/examples/jsm/loaders/GLTFLoader.js",
-                        "OrbitControls": "https://unpkg.com/three@0.108.0/examples/jsm/controls/OrbitControls.js"
-                    }
-                }
-        </script>
-	<script type="module" src="./logo.js"></script>
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.108.0/build/three.module.js",
+                "GLTFLoader": "https://unpkg.com/three@0.108.0/examples/jsm/loaders/GLTFLoader.js",
+                "OrbitControls": "https://unpkg.com/three@0.108.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+	<script type="module" src="./pong.js"></script>
 </body>
+
 </html>
