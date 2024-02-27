@@ -1,3 +1,1 @@
-![Animated GIF](https://github.com/sleepychloe/three.js_practice/blob/main/demo.gif)
-
-![Animated GIF](https://github.com/sleepychloe/three.js_practice/blob/main/demo_move.gif)
+![Animated GIF](https://github.com/sleepychloe/3d_pong/blob/main/pong.gif)
